@@ -1,1 +1,7 @@
 [Превью вёрстки](http://lab.rustemtastanov.name/korob)
+[Поиск](http://lab.rustemtastanov.name/korob/search.html)
+[Каталог](http://lab.rustemtastanov.name/korob/catalog.html)
+[Товар](http://lab.rustemtastanov.name/korob/product.html)
+[F.A.Q.](http://lab.rustemtastanov.name/korob/faq.html)
+[Новости](http://lab.rustemtastanov.name/korob/news.html)
+[Новость](http://lab.rustemtastanov.name/korob/article.html)
