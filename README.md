@@ -16,3 +16,4 @@
 * [Финал](http://lab.rustemtastanov.name/korob/final.html)
 * [Акции](http://lab.rustemtastanov.name/korob/sales.html)
 * [Акция](http://lab.rustemtastanov.name/korob/sale.html)
+* [О нас](http://lab.rustemtastanov.name/korob/about.html)

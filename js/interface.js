@@ -20524,6 +20524,60 @@ var DEVICE;
 
 
 /*
+	секция О нас
+	------------------------------------------
+	использованные библиотеки:
+	- http://fancyapps.com/fancybox/3/
+	- https://idangero.us/swiper/
+ 	------------------------------------------ */
+(function() {
+
+	var $section = $("[data-role=\"about\"]");
+
+	if (!$section["length"]) return false;
+
+	var $slider 	= $section.find("[data-role=\"carousel\"]");
+
+	var slider = new Swiper($slider[0], {
+		direction: "horizontal",
+		loop: true,
+		speed: 800,
+		slideActiveClass: "active",
+		spaceBetween: 10,
+		slidesPerView: "auto",
+		lazy: {
+			loadPrevNext: true,
+			loadPrevNextAmount: 3
+		},
+		autoHeight: true
+	});
+
+	slider
+		.on("lazyImageReady", function(slideEl, imageEl) {
+  		$(slideEl).addClass("loaded");
+		});
+
+	$section.find("[data-fancybox]").fancybox({
+		hash: false,
+    protect: true,
+    transitionEffect: "slide",
+    animationDuration: 400,
+    clickSlide: false,
+    buttons: [
+    	"close"
+    ],
+    beforeShow: function(current, previous) {
+    	if (slider) slider.slideTo(current["currIndex"], 600);
+    },
+	});
+
+})();
+//------------------------------------------
+
+
+
+
+/*
 	секция SEO-текст
 	------------------------------------------
 	использованные библиотеки:
