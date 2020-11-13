@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <title>FAQ — Часто задаваемые вопросы</title>
+    <title>Оформление заказа</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -115,7 +115,7 @@
                   <ul class="list--inline">
 
                     <li>
-                      <a href="#" data-toggle="modal" data-target="#modal--login">Вход</a>
+                      <a href="cabinet.html">Личный кабинет</a>
                     </li>
 
                   </ul>
@@ -132,7 +132,7 @@
             <div class="row">
 
               <div class="col-lg-2 col-md-2 col-sm-3 col-sub-left">
-                <a href="index.html" class="link--block logo">
+                <a href="loginned.html" class="link--block logo">
                   <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" class="img--cover hidden-xs" />
                   <img src="img/logo-phone.png" class="img--cover visible-xs" />
                 </a>
@@ -194,7 +194,7 @@
                       <a href="delivery.html" class="link--block">Оплата и доставка</a>
                     </li>
 
-                    <li class="active">
+                    <li>
                       <a href="faq.html" class="link--block">FAQ</a>
                     </li>
 
@@ -281,7 +281,11 @@
           <ul class="list--inline">
 
             <li>
-              <a href="index.html">Главная</a>
+              <a href="loginned.html">Главная</a>
+            </li>
+
+            <li>
+              <a href="cart.html">Корзина</a>
             </li>
 
           </ul>
@@ -289,93 +293,99 @@
         </div>
       </div>
 
-      <section class="section s--faq" data-role="faq">
+      <section class="section s--checkout" data-role="checkout">
         <div class="container">
 
-          <div class="faq-title">
-            <h1 class="title-4">FAQ — Часто задаваемые вопросы</h1>
+          <div class="checkout-title">
+            <h1 class="title-4">Оформление заказа</h1>
           </div>
 
-          <div class="faq-list">
-            <div class="block-in">
-              <div class="faq-item" data-role="item">
+          <div class="form--checkout" data-form="checkout">
+            <form action="">
 
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">Здесь располагается выборка информации?</a>
+              <fieldset>
+                <div class="form-title">
+                  <h4 class="title-4">Данные клиента</h4>
                 </div>
 
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
+                <div class="form-group">
+                  <label class="control-label">Ваше имя</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="name" value="Подгородецкий Константин Вениаминович, эсквайр" />
+                  </div>
                 </div>
 
+                <div class="form-group">
+                  <label class="control-label">Номер телефона</label>
+                  <div class="controls">
+                    <input type="tel" class="form-control" name="phone" placeholder="+7" data-inputmask="'alias':'phone', 'mask':'+7 (999) 999-99-99'" value="+77777777777" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Электронная почта</label>
+                  <div class="controls">
+                    <input type="email" class="form-control" name="email" value="kokokostik@mail.ru" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-title">
+                  <h4 class="title-4">Способ доставки</h4>
+                </div>
+
+                <div class="form-group group-radios">
+                  <div class="controls">
+                    <input type="radio" name="delivery_type" id="delivery_type1" /> <label class="radio" for="delivery_type1">Самовывоз <span><span class="hidden-xs">— </span>в любой день с 10:00 до 20:00</span></label>
+                    <input type="radio" name="delivery_type" id="delivery_type2" checked /> <label class="radio" for="delivery_type2">Доставка курьерской службой по городу <span><span class="hidden-xs">— </span>1 день</span></label>
+                    <input type="radio" name="delivery_type" id="delivery_type3" /> <label class="radio" for="delivery_type3">Почтовой компанией 1 <span><span class="hidden-xs">— </span>до 3 дней</span></label>
+                    <input type="radio" name="delivery_type" id="delivery_type4" /> <label class="radio" for="delivery_type4">Почтовой компанией 2 <span><span class="hidden-xs">— </span>до 7 дней</span></label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Адрес доставки</label>
+                  <div class="controls">
+                    <input type="text" class="form-control" name="address" value="г. Усть-Каменогорск, пр-т Независимости, д. 57 кв. 61" />
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="form-title">
+                  <h4 class="title-4">Способ оплаты</h4>
+                </div>
+
+                <div class="form-group group-radios">
+                  <div class="controls">
+                    <input type="radio" name="payment_type" id="payment_type1" /> <label class="radio" for="payment_type1">Наличными курьеру</label>
+                    <input type="radio" name="payment_type" id="payment_type2" checked /> <label class="radio" for="payment_type2">Картой курьеру через POS-терминал</label>
+                    <input type="radio" name="payment_type" id="payment_type3" /> <label class="radio" for="payment_type3">Банковской картой</label>
+                    <input type="radio" name="payment_type" id="payment_type4" /> <label class="radio" for="payment_type4">Через приложение Kaspi</label>
+                    <input type="radio" name="payment_type" id="payment_type5" /> <label class="radio" for="payment_type5">Наложенным платежом</label>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form-controls">
+                <a href="cart.html" class="btn btn--reset hidden-xs">
+                  <span>Вернуться в корзину</span>
+                </a>
+                <!--
+			<button type="button" class="btn btn--secondary btn--submit">
+        <span>Завершить оформление</span>
+      </button>
+    	-->
+                <a href="final.html" class="btn btn--secondary btn--submit">
+                  <span>Завершить оформление</span>
+                </a>
+                <a href="cart.html" class="btn btn--reset visible-xs-inline-block">
+                  <span>Вернуться в корзину</span>
+                </a>
               </div>
-              <div class="faq-item" data-role="item">
 
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">Посвященной наиболее вероятным затруднениям посетителей сайта?</a>
-                </div>
-
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
-                </div>
-
-              </div>
-              <div class="faq-item" data-role="item">
-
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">Которые не знают куда нажимать?</a>
-                </div>
-
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
-                </div>
-
-              </div>
-              <div class="faq-item" data-role="item">
-
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">Или куда оплачивать?</a>
-                </div>
-
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
-                </div>
-
-              </div>
-              <div class="faq-item" data-role="item">
-
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">Поэтому для них создается база вопросов-ответов?</a>
-                </div>
-
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
-                </div>
-
-              </div>
-              <div class="faq-item" data-role="item">
-
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">Которые располагаются в этом разделе?</a>
-                </div>
-
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
-                </div>
-
-              </div>
-              <div class="faq-item" data-role="item">
-
-                <div class="title">
-                  <a href="#" class="link dotted" data-button="toggle">И при нажатии на эти вопросы появляется развернутый ответ?</a>
-                </div>
-
-                <div class="text" data-role="toggle">
-                  <p>В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса. В связи, соответственно, с чем появляется произвольное количество текста, которое исчезает при повторном нажатии на сам текст вопроса.</p>
-                </div>
-
-              </div>
-            </div>
+            </form>
           </div>
 
         </div>
@@ -405,7 +415,7 @@
                 <ul class="list--unstyled" data-role="toggle">
                   <li><a href="delivery.html">Оплата и доставка</a></li>
                   <li><a href="#">Акции</a></li>
-                  <li class="active"><a href="faq.html">Часто задаваемые вопросы</a></li>
+                  <li><a href="faq.html">Часто задаваемые вопросы</a></li>
                   <li><a href="text.html">Соглашения</a></li>
                   <li><a href="text.html">Гарантия</a></li>
                 </ul>
@@ -446,62 +456,6 @@
       </div>
 
     </footer>
-
-    <div class="modal fade modal--login" tabindex="-1" role="dialog" id="modal--login">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
-              <i class="icon icon-close"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form--login" data-form="login">
-              <form action="">
-
-                <div class="form-title">
-                  <h4 class="title-4">Войти в личный кабинет</h4>
-                </div>
-
-                <fieldset>
-
-                  <div class="form-group">
-                    <label class="control-label">Электронная почта</label>
-                    <div class="controls">
-                      <input type="email" class="form-control" name="email" required />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Пароль</label>
-                    <div class="controls">
-                      <input type="password" class="form-control" name="password" required />
-                    </div>
-                    <div class="form-forgot text--large">
-                      <a href="#" class="link">Забыли пароль?</a>
-                    </div>
-                  </div>
-
-                </fieldset>
-
-                <div class="form-controls">
-                  <button type="submit" class="btn btn--secondary btn--submit">
-                    <span>Войти</span>
-                  </button>
-                </div>
-
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <p>Пока нет учетной записи?</p>
-            <div class="title-4">
-              <a href="#" class="link"><b>Зарегистрируйтесь</b></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <span class="visible-lg" data-device="desktop"></span>
     <span class="visible-md" data-device="laptop"></span>

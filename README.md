@@ -11,3 +11,6 @@
 * [Залогиненный](http://lab.rustemtastanov.name/korob/loginned.html)
 * [Кабинет](http://lab.rustemtastanov.name/korob/cabinet.html)
 * [Заказ](http://lab.rustemtastanov.name/korob/order.html)
+* [Корзина](http://lab.rustemtastanov.name/korob/cart.html)
+* [Оформление](http://lab.rustemtastanov.name/korob/checkout.html)
+* [Финал](http://lab.rustemtastanov.name/korob/final.html)

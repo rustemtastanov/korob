@@ -157,7 +157,7 @@
                   </div>
 
                   <div class="col-lg-2 col-md-3 col-sm-4 text--right">
-                    <a href="#" class="btn btn--block btn--cart">
+                    <a href="cart.html" class="btn btn--block btn--cart">
                       <i class="icon icon-cart"></i> <span>0<span class="hidden-xs"> товаров</span></span>
                     </a>
                   </div>
@@ -306,7 +306,8 @@
 
           <div class="order-list">
             <div class="block-in">
-              <div class="order-item">
+              <div class="order-item" data-role="item">
+
                 <table>
                   <tbody>
                     <tr>
@@ -323,25 +324,26 @@
                       <td class="col-count">
                         <div class="counter">
                           <button type="button" class="btn--unstyled btn--minus" data-button="minus"></button>
-                          <span class="value">1</span>
+                          <span class="value" data-output="count">1</span>
                           <button type="button" class="btn--unstyled btn--plus" data-button="plus"></button>
                         </div>
                       </td>
                       <td class="col-amount">
-                        <b>94 000 т</b>
+                        <b><span data-output="amount">94 000</span> т</b>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="order-item">
+              <div class="order-item" data-role="item">
+
                 <table>
                   <tbody>
                     <tr>
                       <td class="col-img">
                         <a href="product.html" class="link--block">
                           <div class="img--centered" data-role="lazyimg">
-                            <img data-src="samples/pic-catalog-2.png" class="lazy" />
+                            <img data-src="samples/pic-catalog-8.png" class="lazy" />
                           </div>
                         </a>
                       </td>
@@ -351,18 +353,19 @@
                       <td class="col-count">
                         <div class="counter">
                           <button type="button" class="btn--unstyled btn--minus" data-button="minus"></button>
-                          <span class="value">3</span>
+                          <span class="value" data-output="count">3</span>
                           <button type="button" class="btn--unstyled btn--plus" data-button="plus"></button>
                         </div>
                       </td>
                       <td class="col-amount">
-                        <b>9 300 т</b>
+                        <b><span data-output="amount">9 300</span> т</b>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="order-item">
+              <div class="order-item" data-role="item">
+
                 <table>
                   <tbody>
                     <tr>
@@ -379,25 +382,26 @@
                       <td class="col-count">
                         <div class="counter">
                           <button type="button" class="btn--unstyled btn--minus" data-button="minus"></button>
-                          <span class="value">1</span>
+                          <span class="value" data-output="count">1</span>
                           <button type="button" class="btn--unstyled btn--plus" data-button="plus"></button>
                         </div>
                       </td>
                       <td class="col-amount">
-                        <b>94 000 т</b>
+                        <b><span data-output="amount">94 000</span> т</b>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="order-item">
+              <div class="order-item" data-role="item">
+
                 <table>
                   <tbody>
                     <tr>
                       <td class="col-img">
                         <a href="product.html" class="link--block">
                           <div class="img--centered" data-role="lazyimg">
-                            <img data-src="samples/pic-catalog-2.png" class="lazy" />
+                            <img data-src="samples/pic-catalog-8.png" class="lazy" />
                           </div>
                         </a>
                       </td>
@@ -407,12 +411,12 @@
                       <td class="col-count">
                         <div class="counter">
                           <button type="button" class="btn--unstyled btn--minus" data-button="minus"></button>
-                          <span class="value">3</span>
+                          <span class="value" data-output="count">3</span>
                           <button type="button" class="btn--unstyled btn--plus" data-button="plus"></button>
                         </div>
                       </td>
                       <td class="col-amount">
-                        <b>9 300 т</b>
+                        <b><span data-output="amount">9 300</span> т</b>
                       </td>
                     </tr>
                   </tbody>
@@ -431,7 +435,7 @@
           </div>
 
           <div class="order-controls">
-            <a href="#" class="btn btn--secondary btn--submit">
+            <a href="cart.html" class="btn btn--secondary btn--submit">
               Повторить заказ
             </a>
           </div>
