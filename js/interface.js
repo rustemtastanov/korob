@@ -20039,6 +20039,12 @@ var DEVICE;
 		})
 		.bind("hideCatalogNavEvent", function() {
 			unset();
+		})
+		.delegate(".modal", "show.bs.modal", function() {
+			set();
+		})
+		.delegate(".modal", "hidden.bs.modal", function() {
+			unset();
 		});
 
 })();

@@ -11,7 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <title>Шуруповерты и дрели</title>
+    <title>Главная</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -115,7 +115,7 @@
                   <ul class="list--inline">
 
                     <li>
-                      <a href="#" data-toggle="modal" data-target="#modal--login">Вход</a>
+                      <a href="cabinet.html">Личный кабинет</a>
                     </li>
 
                   </ul>
@@ -132,7 +132,7 @@
             <div class="row">
 
               <div class="col-lg-2 col-md-2 col-sm-3 col-sub-left">
-                <a href="index.html" class="link--block logo">
+                <a href="loginned.html" class="link--block logo">
                   <img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" class="img--cover hidden-xs" />
                   <img src="img/logo-phone.png" class="img--cover visible-xs" />
                 </a>
@@ -275,24 +275,77 @@
 
     <main class="content">
 
-      <div class="nav-breadcrumbs">
+      <section class="section s--promo" data-role="promo">
         <div class="container">
 
-          <ul class="list--inline">
+          <div class="promo-list swiper-container" data-role="carousel">
+            <div class="block-in swiper-wrapper">
+              <div class="promo-item swiper-slide">
+                <a href="#" class="link--block">
 
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
+                  <div class="img">
+                    <img data-src="samples/pic-promo-2.png" class="swiper-lazy img--cover" />
+                  </div>
 
-            <li>
-              <a href="catalog.html">Инструменты</a>
-            </li>
+                  <div class="inner">
+                    <div class="in">
 
-            <li>
-              <a href="catalog.html">Электроинструменты</a>
-            </li>
+                      <div class="title"><b>Мультислайдер
+                          с промоутируемыми</b>
+                        предложениями</div>
 
-          </ul>
+                    </div>
+                  </div>
+
+                </a>
+              </div>
+              <div class="promo-item swiper-slide">
+                <a href="#" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-promo-3.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="inner">
+                    <div class="in">
+
+                    </div>
+                  </div>
+
+                </a>
+              </div>
+              <div class="promo-item swiper-slide">
+                <a href="#" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-promo-1.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="inner">
+                    <div class="in">
+
+                    </div>
+                  </div>
+
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="informer">
+        <div class="container">
+
+          <div class="title">
+            <h3 class="title-2">42 000 товаров в&nbsp;наличии</h3>
+          </div>
+
+          <div class="text">
+            <a href="catalog.html" class="link">Стройматериалы</a>, <a href="catalog.html" class="link">электротовары</a>, <a href="catalog.html" class="link">инструменты</a>, <a href="catalog.html" class="link">сантехника</a>, <a href="catalog.html" class="link">краски и лаки</a>, <a href="catalog.html" class="link">кафель и напольные покрытия</a>, <a href="catalog.html" class="link">декор</a>, <a href="catalog.html" class="link">товары для сада</a><br />
+            и многое другое — доступно для заказа в 1 клик
+          </div>
 
         </div>
       </div>
@@ -301,192 +354,7 @@
         <div class="container">
 
           <div class="s-title catalog-title">
-            <h3 class="title-3">Шуруповерты и дрели</h3>
-          </div>
-
-          <div class="form--filters" data-form="filters">
-            <form action="">
-
-              <div class="row">
-
-                <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-                  <label><i class="icon icon-filters"></i> Фильтры:</label>
-                  <div>
-                    <button type="button" class="btn btn--filter">Цена</button>
-                    <button type="button" class="btn btn--filter" data-toggle="modal" data-target="#modal--developer">Производитель</button>
-                    <button type="button" class="btn btn--filter selected" data-toggle="modal" data-target="#modal--type">Тип: Дрели</button>
-                    <button type="button" class="btn btn--filter" data-toggle="modal" data-target="#modal--power">Мощность</button>
-                    <button type="button" class="btn btn--filter" data-toggle="modal" data-target="#modal--supply">Питание</button>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-5 col-right">
-                  Сортировать
-                  <a href="#" class="link dotted link--sort sort--desc" data-button="sort">
-                    <input type="hidden" name="sort" value="desc" />
-                    <span class="text--desc">по убыванию цены</span>
-                    <span class="text--asc">по возрастанию цены</span>
-                  </a>
-                </div>
-
-              </div>
-
-              <div class="modal fade modal--filters" tabindex="-1" role="dialog" id="modal--developer">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
-                        <i class="icon icon-close"></i>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-
-                      <div class="form-title">
-                        <h4 class="title-4">Производитель</h4>
-                      </div>
-
-                      <fieldset>
-                        <div class="form-group">
-                          <div class="controls">
-                            <input type="checkbox" id="developer-1" /> <label for="developer-1" class="checkbox">Bosch</label>
-                            <input type="checkbox" id="developer-2" /> <label for="developer-2" class="checkbox">Makita</label>
-                            <input type="checkbox" id="developer-3" /> <label for="developer-3" class="checkbox">Электромеханический завод №7</label>
-                            <input type="checkbox" id="developer-4" /> <label for="developer-4" class="checkbox">Black&Decker</label>
-                            <input type="checkbox" id="developer-5" /> <label for="developer-5" class="checkbox">DeWalt</label>
-                            <input type="checkbox" id="developer-6" /> <label for="developer-6" class="checkbox">Harper</label>
-                            <input type="checkbox" id="developer-7" /> <label for="developer-7" class="checkbox">Wurth</label>
-                            <input type="checkbox" id="developer-8" /> <label for="developer-8" class="checkbox">Metabo</label>
-                          </div>
-                        </div>
-                      </fieldset>
-
-                      <div class="form-controls">
-                        <button type="button" class="btn btn--secondary btn--submit" data-button="apply">
-                          <span>Выбрать</span>
-                        </button>
-                        <button type="button" class="btn btn--reset" data-button="reset">
-                          <span>Сбросить всё</span>
-                        </button>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade modal--filters" tabindex="-1" role="dialog" id="modal--type">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
-                        <i class="icon icon-close"></i>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-
-                      <div class="form-title">
-                        <h4 class="title-4">Тип</h4>
-                      </div>
-
-                      <fieldset>
-                        <div class="form-group">
-                          <div class="controls">
-                            <input type="checkbox" id="type-1" checked /> <label for="type-1" class="checkbox">Дрели</label>
-                            <input type="checkbox" id="type-2" /> <label for="type-2" class="checkbox">Тип 2</label>
-                            <input type="checkbox" id="type-3" /> <label for="type-3" class="checkbox">Тип 3</label>
-                          </div>
-                        </div>
-                      </fieldset>
-
-                      <div class="form-controls">
-                        <button type="button" class="btn btn--secondary btn--submit" data-button="apply">
-                          <span>Выбрать</span>
-                        </button>
-                        <button type="button" class="btn btn--reset" data-button="reset">
-                          <span>Сбросить всё</span>
-                        </button>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade modal--filters" tabindex="-1" role="dialog" id="modal--power">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
-                        <i class="icon icon-close"></i>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-
-                      <div class="form-title">
-                        <h4 class="title-4">Мощность</h4>
-                      </div>
-
-                      <fieldset>
-                        <div class="form-group">
-                          <div class="controls">
-                            <input type="checkbox" id="power-1" /> <label for="power-1" class="checkbox">Мощность 1</label>
-                            <input type="checkbox" id="power-2" /> <label for="power-2" class="checkbox">Мощность 2</label>
-                            <input type="checkbox" id="power-3" /> <label for="power-3" class="checkbox">Мощность 3</label>
-                            <input type="checkbox" id="power-4" /> <label for="power-4" class="checkbox">Мощность 4</label>
-                          </div>
-                        </div>
-                      </fieldset>
-
-                      <div class="form-controls">
-                        <button type="button" class="btn btn--secondary btn--submit" data-button="apply">
-                          <span>Выбрать</span>
-                        </button>
-                        <button type="button" class="btn btn--reset" data-button="reset">
-                          <span>Сбросить всё</span>
-                        </button>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade modal--filters" tabindex="-1" role="dialog" id="modal--supply">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
-                        <i class="icon icon-close"></i>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-
-                      <div class="form-title">
-                        <h4 class="title-4">Питание</h4>
-                      </div>
-
-                      <fieldset>
-                        <div class="form-group">
-                          <div class="controls">
-                            <input type="checkbox" id="supply-1" /> <label for="supply-1" class="checkbox">Питание 1</label>
-                            <input type="checkbox" id="supply-2" /> <label for="supply-2" class="checkbox">Питание 2</label>
-                            <input type="checkbox" id="supply-3" /> <label for="supply-3" class="checkbox">Питание 3</label>
-                          </div>
-                        </div>
-                      </fieldset>
-
-                      <div class="form-controls">
-                        <button type="button" class="btn btn--secondary btn--submit" data-button="apply">
-                          <span>Выбрать</span>
-                        </button>
-                        <button type="button" class="btn btn--reset" data-button="reset">
-                          <span>Сбросить всё</span>
-                        </button>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </form>
+            <h3 class="title-3">Самые популярные</h3>
           </div>
 
           <div class="catalog-list">
@@ -883,816 +751,7 @@
 
               </div>
 
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-1.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Дрель-шуруповерт Bosch
-                          GDX 18V-200 C
-                          (06019G4204)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>94 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-2.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Угольный гриль G610
-                          Оранжевый</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>1 750 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-3.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Флюгер Gala FL002-BY</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>30 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-4.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Компрессор Вихрь
-                          КМП-240/50 (74/3/8)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>54 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart toggled">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-5.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Кресло Secret De Maison
-                          CINDY (EAMES) (mod. 919) (4
-                          в 1 уп.)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>24 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-6.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Насос ножной Intex 68610</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>4 300 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-7.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Пила дисковая Bosch GKS 65
-                          (0601667000)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>123 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-8.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Секатор прямого реза 200
-                          мм, 2-компонентные
-                          рукоятки Palisad</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>3 100 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 hidden-md">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-9.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Пила цепная Makita DCS4610</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>210 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 hidden-md hidden-sm">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-10.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Чехол на молнии для
-                          парника 300 х 110 см, СУФ
-                          90 Palisad</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>8 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-1.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Дрель-шуруповерт Bosch
-                          GDX 18V-200 C
-                          (06019G4204)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>94 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-2.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Угольный гриль G610
-                          Оранжевый</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>1 750 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-3.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Флюгер Gala FL002-BY</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>30 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-4.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Компрессор Вихрь
-                          КМП-240/50 (74/3/8)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>54 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart toggled">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-5.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Кресло Secret De Maison
-                          CINDY (EAMES) (mod. 919) (4
-                          в 1 уп.)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>24 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-6.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Насос ножной Intex 68610</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>4 300 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-7.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Пила дисковая Bosch GKS 65
-                          (0601667000)</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>123 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 ">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-8.png" class="lazy" />
-                        </div>
-                      </a>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Секатор прямого реза 200
-                          мм, 2-компонентные
-                          рукоятки Palisad</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>3 100 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 hidden-md">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-9.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Пила цепная Makita DCS4610</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>210 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-2 col-md-3 col-sm-4 hidden-md hidden-sm">
-
-                <div class="catalog-item">
-                  <div class="inner">
-
-                    <div class="img">
-                      <a href="product.html" class="link--block">
-                        <div class="img--centered" data-role="lazyimg">
-                          <img data-src="samples/pic-catalog-10.png" class="lazy" />
-                        </div>
-                      </a>
-
-                      <div class="label label--green">0 - 0 - 24</div>
-
-                    </div>
-
-                    <div class="in">
-
-                      <div class="title">
-                        <a href="product.html">Чехол на молнии для
-                          парника 300 х 110 см, СУФ
-                          90 Palisad</a>
-                      </div>
-
-                      <div class="price text--large">
-                        <b>8 000 т</b>
-                      </div>
-
-                      <div class="controls">
-                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
-                          <span class="text--toggle">В корзину</span>
-                          <span class="text--toggled">Уже в корзине</span>
-                        </button>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
             </div>
-          </div>
-
-          <div class="pagination">
-            <ul class="list--inline">
-
-              <li>
-                <a href="#">1</a>
-              </li>
-
-              <li>
-                <a href="#">2</a>
-              </li>
-
-              <li class="active">
-                <a href="#">3</a>
-              </li>
-
-              <li>
-                <a href="#">4</a>
-              </li>
-
-              <li>
-                <a href="#">5</a>
-              </li>
-
-            </ul>
           </div>
 
         </div>
@@ -1806,19 +865,769 @@
         </div>
       </section>
 
+      <section class="section s--catalog" data-role="catalog">
+        <div class="container">
+
+          <div class="catalog-list">
+            <div class="row block-in">
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-1.png" class="lazy" />
+                        </div>
+                      </a>
+
+                      <div class="label label--green">0 - 0 - 24</div>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Дрель-шуруповерт Bosch
+                          GDX 18V-200 C
+                          (06019G4204)</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>94 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-2.png" class="lazy" />
+                        </div>
+                      </a>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Угольный гриль G610
+                          Оранжевый</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>1 750 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-3.png" class="lazy" />
+                        </div>
+                      </a>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Флюгер Gala FL002-BY</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>30 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-4.png" class="lazy" />
+                        </div>
+                      </a>
+
+                      <div class="label label--green">0 - 0 - 24</div>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Компрессор Вихрь
+                          КМП-240/50 (74/3/8)</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>54 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart toggled">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-5.png" class="lazy" />
+                        </div>
+                      </a>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Кресло Secret De Maison
+                          CINDY (EAMES) (mod. 919) (4
+                          в 1 уп.)</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>24 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-6.png" class="lazy" />
+                        </div>
+                      </a>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Насос ножной Intex 68610</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>4 300 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-7.png" class="lazy" />
+                        </div>
+                      </a>
+
+                      <div class="label label--green">0 - 0 - 24</div>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Пила дисковая Bosch GKS 65
+                          (0601667000)</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>123 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 ">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-8.png" class="lazy" />
+                        </div>
+                      </a>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Секатор прямого реза 200
+                          мм, 2-компонентные
+                          рукоятки Palisad</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>3 100 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 hidden-md">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-9.png" class="lazy" />
+                        </div>
+                      </a>
+
+                      <div class="label label--green">0 - 0 - 24</div>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Пила цепная Makita DCS4610</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>210 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-4 hidden-md hidden-sm">
+
+                <div class="catalog-item">
+                  <div class="inner">
+
+                    <div class="img">
+                      <a href="product.html" class="link--block">
+                        <div class="img--centered" data-role="lazyimg">
+                          <img data-src="samples/pic-catalog-10.png" class="lazy" />
+                        </div>
+                      </a>
+
+                      <div class="label label--green">0 - 0 - 24</div>
+
+                    </div>
+
+                    <div class="in">
+
+                      <div class="title">
+                        <a href="product.html">Чехол на молнии для
+                          парника 300 х 110 см, СУФ
+                          90 Palisad</a>
+                      </div>
+
+                      <div class="price text--large">
+                        <b>8 000 т</b>
+                      </div>
+
+                      <div class="controls">
+                        <button type="button" class="btn btn--default btn--block btn--to-cart ">
+                          <span class="text--toggle">В корзину</span>
+                          <span class="text--toggled">Уже в корзине</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section s--benefits" data-role="benefits">
+        <div class="container">
+
+          <div class="s-title benefits-title">
+            <h3 class="title-3">Наши преимущества</h3>
+          </div>
+
+          <div class="benefits-list">
+            <div class="row block-in">
+              <div class="col-lg-4 col-md-4">
+
+                <div class="benefits-item">
+
+                  <div class="icon silent" data-role="lazyimg">
+                    <img data-src="img/benefits-icon-1.png" class="lazy img--cover" />
+                  </div>
+
+                  <div class="inner">
+                    <div class="title text--primary">
+                      <b>Доставляем быстро</b>
+                    </div>
+                    <div class="text">Обычные заказы в течение часа,
+                      срочные - мгновенно</div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-4">
+
+                <div class="benefits-item">
+
+                  <div class="icon silent" data-role="lazyimg">
+                    <img data-src="img/benefits-icon-2.png" class="lazy img--cover" />
+                  </div>
+
+                  <div class="inner">
+                    <div class="title text--primary">
+                      <b>Даем щедрые скидки</b>
+                    </div>
+                    <div class="text">Скидки до 90% с программой
+                      лояльности Короб+</div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-lg-4 col-md-4">
+
+                <div class="benefits-item">
+
+                  <div class="icon silent" data-role="lazyimg">
+                    <img data-src="img/benefits-icon-3.png" class="lazy img--cover" />
+                  </div>
+
+                  <div class="inner">
+                    <div class="title text--primary">
+                      <b>Отвечаем за качество</b>
+                    </div>
+                    <div class="text">Предоставляем расширенную гарантию
+                      на большинство товаров</div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section s--white s--partners hidden-xs" data-role="partners">
+        <div class="container">
+
+          <div class="s-title partners-title">
+            <h3 class="title-3">Наши партнёры</h3>
+          </div>
+
+          <div class="partners-list">
+            <div class="block-in">
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-carcher.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-bosch.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-fca.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-microsoft.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-carlsberg.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-google.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-fca.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-microsoft.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-carlsberg.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-google.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-carcher.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-bosch.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-carlsberg.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-google.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-carcher.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-bosch.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-fca.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="partner-item">
+
+                <div class="logo">
+                  <div class="img--centered" data-role="lazyimg">
+                    <img data-src="samples/partner-microsoft.png" class="lazy" />
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="partners-controls text--large">
+            <a href="#" class="link">Полный список партнеров</a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section s--news s--index" data-role="news">
+        <div class="container">
+
+          <div class="s-title news-title">
+            <h3 class="title-3">Новости</h3>
+          </div>
+
+          <div class="news-list swiper-container" data-role="carousel">
+            <div class="block-in swiper-wrapper">
+              <div class="news-item swiper-slide">
+                <a href="article.html" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-news-1.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="title text--large">
+                    <b>Невероятное поступление коллекции ламината 2020</b>
+                  </div>
+
+                  <div class="date">20 июня 2020</div>
+
+                </a>
+              </div>
+              <div class="news-item swiper-slide">
+                <a href="article.html" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-news-2.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="title text--large">
+                    <b>Летняя скидка на бензопилы</b>
+                  </div>
+
+                  <div class="date">31 мая 2020</div>
+
+                </a>
+              </div>
+              <div class="news-item swiper-slide">
+                <a href="article.html" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-news-3.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="title text--large">
+                    <b>Поздравляем всех дам с международным женским днем!</b>
+                  </div>
+
+                  <div class="date">8 марта 2020</div>
+
+                </a>
+              </div>
+              <div class="news-item swiper-slide">
+                <a href="article.html" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-news-4.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="title text--large">
+                    <b>Подготовьтесь к посеву</b>
+                  </div>
+
+                  <div class="date">1 марта 2020</div>
+
+                </a>
+              </div>
+              <div class="news-item swiper-slide">
+                <a href="article.html" class="link--block">
+
+                  <div class="img">
+                    <img data-src="samples/pic-news-5.png" class="swiper-lazy img--cover" />
+                  </div>
+
+                  <div class="title text--large">
+                    <b>С наступившим новым годом</b>
+                  </div>
+
+                  <div class="date">1 января 2020</div>
+
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <div class="page-seo" data-role="seo">
         <div class="container">
 
+          <div class="title">
+            <h4 class="title-3">Интернет-магазин Короб</h4>
+          </div>
+
           <div class="text hidden-xs">
-            И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе. И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе. И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе.
+            И, по традиции, наступает самое время для для большого СЕО-текста, который будет рассказывать об интернет-магазине. И, естественно, он будет максимально насыщен ключевыми словами для поисковых машин. А чтобы не травмировать пользователя, после нескольких строк он будет скрываться под кат. И, по традиции, наступает самое время для для большого СЕО-текста, который будет рассказывать об интернет-магазине. И, естественно, он будет максимально насыщен ключевыми словами для поисковых машин. А чтобы не травмировать пользователя, после нескольких строк он будет скрываться под кат.
           </div>
 
           <div class="text visible-xs">
-            И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе.
+            И, по традиции, наступает самое время для для большого СЕО-текста, который будет рассказывать об интернет-магазине. И, естественно, он будет максимально насыщен ключевыми словами для поисковых машин. А чтобы не травмировать пользователя, после нескольких строк он будет скрываться под кат.
           </div>
 
           <div class="toggle" data-role="toggle" style="display: none;">
-            И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе. И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе. И вновь время для СЕО-текста, на этот раз сфокусированного на типе товара, представленного в данном разделе.
+            И, по традиции, наступает самое время для для большого СЕО-текста, который будет рассказывать об интернет-магазине. И, естественно, он будет максимально насыщен ключевыми словами для поисковых машин. А чтобы не травмировать пользователя, после нескольких строк он будет скрываться под кат. И, по традиции, наступает самое время для для большого СЕО-текста, который будет рассказывать об интернет-магазине. И, естественно, он будет максимально насыщен ключевыми словами для поисковых машин. А чтобы не травмировать пользователя, после нескольких строк он будет скрываться под кат.
           </div>
 
           <div class="controls">
@@ -1896,62 +1705,6 @@
       </div>
 
     </footer>
-
-    <div class="modal fade modal--login" tabindex="-1" role="dialog" id="modal--login">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
-              <i class="icon icon-close"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="form--login" data-form="login">
-              <form action="">
-
-                <div class="form-title">
-                  <h4 class="title-4">Войти в личный кабинет</h4>
-                </div>
-
-                <fieldset>
-
-                  <div class="form-group">
-                    <label class="control-label">Электронная почта</label>
-                    <div class="controls">
-                      <input type="email" class="form-control" name="email" required />
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="control-label">Пароль</label>
-                    <div class="controls">
-                      <input type="password" class="form-control" name="password" required />
-                    </div>
-                    <div class="form-forgot text--large">
-                      <a href="#" class="link">Забыли пароль?</a>
-                    </div>
-                  </div>
-
-                </fieldset>
-
-                <div class="form-controls">
-                  <button type="submit" class="btn btn--secondary btn--submit">
-                    <span>Войти</span>
-                  </button>
-                </div>
-
-              </form>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <p>Пока нет учетной записи?</p>
-            <div class="title-4">
-              <a href="#" class="link"><b>Зарегистрируйтесь</b></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <span class="visible-lg" data-device="desktop"></span>
     <span class="visible-md" data-device="laptop"></span>
