@@ -7,3 +7,4 @@
 * [Новость](http://lab.rustemtastanov.name/korob/article.html)
 * [Адреса магазинов](http://lab.rustemtastanov.name/korob/shops.html)
 * [Текстовая](http://lab.rustemtastanov.name/korob/text.html)
+* [Оплата и Доставка](http://lab.rustemtastanov.name/korob/delivery.html)
