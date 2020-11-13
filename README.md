@@ -14,3 +14,5 @@
 * [Корзина](http://lab.rustemtastanov.name/korob/cart.html)
 * [Оформление](http://lab.rustemtastanov.name/korob/checkout.html)
 * [Финал](http://lab.rustemtastanov.name/korob/final.html)
+* [Акции](http://lab.rustemtastanov.name/korob/sales.html)
+* [Акция](http://lab.rustemtastanov.name/korob/sale.html)
