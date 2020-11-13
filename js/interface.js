@@ -20413,6 +20413,34 @@ var DEVICE;
 
 
 /*
+	секция F.A.Q.
+	------------------------------------------
+	использованные библиотеки:
+ 	------------------------------------------ */
+(function() {
+
+	var $section = $("[data-role=\"faq\"]");
+
+	if (!$section["length"]) return false;
+
+	$section.find("[data-role=\"item\"]").each(function() {
+		var $item = $(this);
+
+		$item.find("[data-button=\"toggle\"]").on("click", function(e) {
+			e.preventDefault();
+			$item
+				.toggleClass("toggled")
+				.find("[data-role=\"toggle\"]").slideToggle(300);
+		});
+	});
+
+})();
+//------------------------------------------
+
+
+
+
+/*
 	секция SEO-текст
 	------------------------------------------
 	использованные библиотеки:
