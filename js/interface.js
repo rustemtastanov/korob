@@ -20441,6 +20441,83 @@ var DEVICE;
 
 
 /*
+	секция Адреса магазинов
+	------------------------------------------
+	использованные библиотеки:
+	- https://getbootstrap.com/docs/3.3/javascript/#tabs
+	- http://api.2gis.ru/doc/maps/ru/quickstart/
+ 	------------------------------------------ */
+(function() {
+
+	var $section = $("[data-role=\"shops\"]");
+
+	if (!$section["length"]) return false;
+
+	var $map 		= $section.find("[data-role=\"map\"]");
+	var zoom 		= parseInt($map.data("zoom"), 10);
+	var center 	= $map.data("center"), pins = [], map;
+	var tab 		= $map.parents(".tab-pane").attr("id");
+
+	$section.find("[data-role=\"item\"]").each(function() {
+		var $item 	= $(this);
+		var latlng 	= $item.data("latlng");
+
+		pins.push({
+			"latlng": latlng,
+			"src": 		$item.data("marker"),
+			"sizes": 	$item.data("marker-sizes"),
+			"offset": $item.data("marker-offset")
+		});
+
+		$item.find("[data-button=\"map\"]").on("click", function(e) {
+			e.preventDefault();
+			$section.find("[aria-controls="+ tab +"]").tab("show");
+			if (map) {
+				map.setView(latlng)
+			}
+		});
+	});
+
+	var renderMap = function() {
+		DG.then(function() {
+
+			map = DG.map($map[0], {
+				center: center,
+				zoom: zoom,
+				fullscreenControl: false,
+				zoomControl: false,
+				scrollWheelZoom: true
+			});
+
+			$.each(pins, function(id, pin) {
+
+				var icon = DG.icon({
+					"iconUrl": 		pin["src"],
+					"iconSize": 	[pin["sizes"][0], pin["sizes"][1]],
+					"iconAnchor": [pin["sizes"][0]/2 - pin["offset"][0], pin["sizes"][1] - pin["offset"][1]]
+				});
+
+				DG.marker(pin["latlng"], {
+					"icon": 				icon,
+					"riseOnHover": 	false
+				}).addTo(map);
+			});
+
+			$map.addClass("loaded");
+		});
+	};
+
+	$.getScript("https://maps.api.2gis.ru/2.0/loader.js?pkg=full", function() {
+		renderMap();
+	});
+
+})();
+//------------------------------------------
+
+
+
+
+/*
 	секция SEO-текст
 	------------------------------------------
 	использованные библиотеки:
