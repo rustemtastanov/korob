@@ -20089,6 +20089,44 @@ var DEVICE;
 
 
 /*
+	выпадающее Меню на планшете
+	------------------------------------------
+	использованные библиотеки:
+ 	------------------------------------------ */
+(function() {
+
+	var $body 	= $("body");
+	var $btn 		= $("[data-button=\"menu\"]");
+	var showed	= $body.hasClass("show--menu");
+	var $over 	= $("[data-role=\"overlay\"]");
+
+	var show = function() {
+		showed = true;
+		$body.addClass("show--menu");
+	};
+
+	var hide = function() {
+		showed = false;
+		$body.removeClass("show--menu");
+	};
+
+	$btn.on("click", function(e) {
+		e.preventDefault();
+		if (showed) hide(); else show();
+	});
+
+	$over.on("click", function(e) {
+		e.preventDefault();
+		if (showed) hide();
+	});
+
+})();
+//------------------------------------------
+
+
+
+
+/*
 	выпадающее Меню
 	------------------------------------------
 	использованные библиотеки:
@@ -20099,6 +20137,7 @@ var DEVICE;
 	var $nav 		= $("[data-nav=\"catalog\"]");
 	var $btn 		= $("[data-button=\"catalog\"]");
 	var showed	= $body.hasClass("show--catalog");
+	var $over 	= $("[data-role=\"overlay\"]");
 
 	var show = function() {
 		showed = true;
@@ -20149,6 +20188,11 @@ var DEVICE;
 	$btn.on("click", function(e) {
 		e.preventDefault();
 		if (showed) hide(); else show();
+	});
+
+	$over.on("click", function(e) {
+		e.preventDefault();
+		if (showed) hide();
 	});
 
 })();
