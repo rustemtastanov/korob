@@ -95,18 +95,9 @@
 
               <div class="col-lg-6 col-md-6 col-sm-6 col-center">
                 <div class="nav-location">
-                  <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" id="location" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <span>Усть-Каменогорск</span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="location">
-                      <li><a href="#">Пункт 1</a></li>
-                      <li><a href="#">Пункт 2</a></li>
-                      <li><a href="#">Пункт 3</a></li>
-                      <li><a href="#">Пункт 4</a></li>
-                      <li><a href="#">Пункт 5</a></li>
-                    </ul>
-                  </div>
+                  <a href="#" data-toggle="modal" data-target="#modal--location">
+                    <span>Усть-Каменогорск</span>
+                  </a>
                 </div>
               </div>
 
@@ -911,6 +902,47 @@
 
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal--location" tabindex="-1" role="dialog" id="modal--location">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn--unstyled btn--close" data-dismiss="modal">
+              <i class="icon icon-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="form-title">
+              <h4 class="title-4">Город</h4>
+            </div>
+
+            <fieldset>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="radio" name="location" id="location-1" /> <label for="location-1" class="radio">Нур-Судтан</label>
+                  <input type="radio" name="location" id="location-2" /> <label for="location-2" class="radio">Алматы</label>
+                  <input type="radio" name="location" id="location-3" checked /> <label for="location-3" class="radio">Усть-Каменогорск</label>
+                  <input type="radio" name="location" id="location-4" /> <label for="location-4" class="radio">Шымкен</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-controls">
+              <a href="#" class="btn btn--secondary btn--submit">
+                <span>Выбрать</span>
+              </a>
+              <!--
+          <button type="button" class="btn btn--secondary btn--submit">
+            <span>Выбрать</span>
+          </button>
+          -->
+            </div>
+
           </div>
         </div>
       </div>
